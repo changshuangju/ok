@@ -1,0 +1,24 @@
+<h1 align="center">Labs Result of <%= @show_sheet.student_name %></h1>
+<div align="center">
+<table border="1">
+  <tr>
+    <th>lab1</th>
+    <th>lab2</th>
+    <th>lab3</th>
+    <th>lab4</th>
+    <th>lab5</th>
+    <th>lab6</th>
+    <th>lab7</th>
+  </tr>
+  <tr>
+    <td><%= experiment.lab1 %></td>
+    <td><%= experiment.lab2 %></td>
+    <td><%= experiment.lab3 %></td>
+    <td><%= experiment.lab4 %></td>
+    <td><%= experiment.lab5 %></td>
+    <td><%= experiment.lab6 %></td>
+    <td><%= experiment.lab7 %></td>
+  </tr>
+</table>
+</div>
+<%= link_to 'back', sheet_path(@show_sheet) %>

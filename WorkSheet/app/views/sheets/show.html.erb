@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Student_Number:</b>
+  <%= @sheet.student_number %>
+</p>
+
+<p>
+  <b>Student_Name:</b>
+  <%= @sheet.student_name %>
+</p>
+
+<p>
+  <b>Project:</b>
+  <%= @sheet.project %>
+</p>
+<p>
+  <%= link_to 'labs', show_experiments_path(@sheet) %>
+  <%= @sheet.labs %>
+</p>
+<p>
+  <%= link_to 'discussions', show_talks_path(@sheet) %>
+  <%= @sheet.discussions %>
+</p>
+<p>
+  <b>Test:</b>
+  <%= @sheet.test %>
+</p>
+<p>
+  <b>Final:</b>
+  <%= @sheet.final %>
+</p>
+
+<%= button_to 'Back', sheets_path, method: :get %>

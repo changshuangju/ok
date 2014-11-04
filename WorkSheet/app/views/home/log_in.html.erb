@@ -1,0 +1,14 @@
+
+  <h1 align="center">Hello,Mr.Park</h1>
+<%= form_for :user, :url => {:action => 'log_in'} do |f| %>
+  <div align="center">
+    <%= f.label :username, 'UserName' %>
+    <%= f.text_field :username %>
+    <br/>
+    <%= f.label :password, 'PassWord' %>
+    <%= f.text_field :password %>
+    <br/>
+    <%= f.submit "Log In" %>
+  </div>
+<% end %>
+

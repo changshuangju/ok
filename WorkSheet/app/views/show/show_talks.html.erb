@@ -1,0 +1,33 @@
+<h1 align="center">Labs Result of <%= @show_sheet.student_name %></h1>
+<div align="center">
+<table border="1">
+  <tr>
+  <th>Discussion1</th>
+  <th>Discussion2</th>
+  <th>Discussion3</th>
+  <th>Discussion4</th>
+  <th>Discussion5</th>
+  <th>Discussion6</th>
+  <th>Discussion7</th>
+  <th>Discussion8</th>
+  <th>Discussion9</th>
+  <th>Discussion10</th>
+  <th>Discussion11</th>
+  </tr>
+  <tr>
+    <td><%= talk.discussion1 %></td>
+    <td><%= talk.discussion2 %></td>
+    <td><%= talk.discussion3 %></td>
+    <td><%= talk.discussion4 %></td>
+    <td><%= talk.discussion5 %></td>
+    <td><%= talk.discussion6 %></td>
+    <td><%= talk.discussion7 %></td>
+    <td><%= talk.discussion8 %></td>
+    <td><%= talk.discussion9 %></td>
+    <td><%= talk.discussion10 %></td>
+    <td><%= talk.discussion11 %></td>
+  </tr>
+</table>
+</div>
+<%= link_to 'back', sheet_path(@show_sheet) %>
+
